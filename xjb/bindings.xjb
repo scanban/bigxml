@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jaxb:bindings
+               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+               xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+               jaxb:version="2.1">
+
+    <jaxb:bindings>
+        <jaxb:globalBindings >
+            <xjc:simple/>
+        </jaxb:globalBindings>
+    </jaxb:bindings>
+
+    <jaxb:bindings schemaLocation="../src/main/resources/schemas/data.xsd" node="/xsd:schema">
+        <jaxb:schemaBindings>
+            <jaxb:package name="examples.schema"/>
+        </jaxb:schemaBindings>
+    </jaxb:bindings>
+
+</jaxb:bindings>

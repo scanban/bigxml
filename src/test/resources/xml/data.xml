@@ -1,0 +1,25 @@
+<data>
+    <dtype_one>
+        <p1>p1_1_data</p1>
+        <p2>p1_2_data</p2>
+        <p3>p1_3_data</p3>
+        <p4>p1_4_data</p4>
+        <p5>p1_5_data</p5>
+    </dtype_one>
+    <dtype_two>
+        <p1>p2_1_data</p1>
+        <p2>p2_2_data</p2>
+        <p3>p2_3_data</p3>
+        <p4>p2_4_data</p4>
+        <p5>p2_5_data</p5>
+    </dtype_two>
+    <WS>
+        <dtype_three>
+            <p1>p3_1_data</p1>
+            <p2>p3_2_data</p2>
+            <p3>p3_3_data</p3>
+            <p4>p3_4_data</p4>
+            <p5>p3_5_data</p5>
+        </dtype_three>
+    </WS>
+</data>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="data" type="dataType"/>
+    <xs:element name="dtype_one" type="dtype_oneType"/>
+    <xs:element name="dtype_two" type="dtype_twoType"/>
+    <xs:element name="dtype_three" type="dtype_threeType"/>
+
+    <xs:complexType name="dtype_oneType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="p1"/>
+            <xs:element type="xs:string" name="p2"/>
+            <xs:element type="xs:string" name="p3"/>
+            <xs:element type="xs:string" name="p4"/>
+            <xs:element type="xs:string" name="p5"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="dataType">
+        <xs:sequence>
+            <xs:element type="dtype_oneType" name="dtype_one"/>
+            <xs:element type="dtype_twoType" name="dtype_two"/>
+            <xs:element type="WSType" name="WS"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="WSType">
+        <xs:sequence>
+            <xs:element type="dtype_threeType" name="dtype_three"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="dtype_twoType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="p1"/>
+            <xs:element type="xs:string" name="p2"/>
+            <xs:element type="xs:string" name="p3"/>
+            <xs:element type="xs:string" name="p4"/>
+            <xs:element type="xs:string" name="p5"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="dtype_threeType">
+        <xs:sequence>
+            <xs:element type="xs:string" name="p1"/>
+            <xs:element type="xs:string" name="p2"/>
+            <xs:element type="xs:string" name="p3"/>
+            <xs:element type="xs:string" name="p4"/>
+            <xs:element type="xs:string" name="p5"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
